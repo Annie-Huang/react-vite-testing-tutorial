@@ -6,6 +6,8 @@ https://github.com/Annie-Huang/react-vite-testing-tutorial
 
 https://v3.vitejs.dev/guide/
 https://vitest.dev/
+https://vitest.dev/guide/#configuring-vitest
+https://vitest.dev/config/#environment
 ------------------------------------------------------------------------------
 
 PS C:\react> npm create vite@latest react-vite-testing-tutorial -- --template react
