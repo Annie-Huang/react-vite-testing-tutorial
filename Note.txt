@@ -10,3 +10,4 @@ https://v3.vitejs.dev/guide/
 PS C:\react> npm create vite@latest react-vite-testing-tutorial -- --template react
 
 PS C:\react\react-vite-testing-tutorial> npm install
+PS C:\react\react-vite-testing-tutorial> npm run dev
