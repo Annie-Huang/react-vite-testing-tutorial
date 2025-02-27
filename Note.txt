@@ -15,3 +15,5 @@ PS C:\react> npm create vite@latest react-vite-testing-tutorial -- --template re
 PS C:\react\react-vite-testing-tutorial> npm install
 PS C:\react\react-vite-testing-tutorial> npm run dev
 PS C:\react\react-vite-testing-tutorial> npm install --save-dev vitest @testing-library/react @testing-library/user-event @testing-library/jest-dom jsdom
+
+PS C:\react\react-vite-testing-tutorial> npm run test
