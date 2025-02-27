@@ -4,6 +4,9 @@ React Vite Testing Tutorial For Beginners - Vitest Testing Crash Course
 https://github.com/machadop1407/react-vite-testing-tutorial/tree/main
 https://github.com/Annie-Huang/react-vite-testing-tutorial
 
-
+https://v3.vitejs.dev/guide/
 ------------------------------------------------------------------------------
 
+PS C:\react> npm create vite@latest react-vite-testing-tutorial -- --template react
+
+PS C:\react\react-vite-testing-tutorial> npm install
