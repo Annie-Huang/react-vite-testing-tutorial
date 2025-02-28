@@ -1,3 +1,4 @@
+import React from 'react';
 import { useCounter } from '../hooks/useCounter';
 
 function Counter() {
