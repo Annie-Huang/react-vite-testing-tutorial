@@ -29,6 +29,7 @@
     "globals": "^15.15.0",
     "jsdom": "^26.0.0",
     "vite": "^6.2.0",
+    "vite-plugin-eslint": "^1.8.1",
     "vitest": "^3.0.7"
   }
 }
