@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
-  plugins: [react()],
+  // https://stackoverflow.com/questions/70519656/referenceerror-react-is-not-defined-migrating-from-cra-to-vite-and-nx
+  plugins: [eslint(), react()],
   test: {
     // https://vitest.dev/config/#environment
     environment: 'jsdom',
