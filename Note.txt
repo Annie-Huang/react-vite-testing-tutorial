@@ -1,7 +1,7 @@
 React Vite Testing Tutorial For Beginners - Vitest Testing Crash Course
 (https://www.youtube.com/watch?v=CxSL0knFxAs)
 
-https://github.com/machadop1407/react-vite-testing-tutorial/tree/main
+https://github.com/machadop1407/react-vite-testing-tutorial
 https://github.com/Annie-Huang/react-vite-testing-tutorial
 
 https://v3.vitejs.dev/guide/
