@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import UserProfile from './UserProfile.jsx';
 
 describe('UserProfile', () => {
@@ -19,5 +19,19 @@ describe('UserProfile', () => {
     render(<UserProfile userId={4} />);
 
     expect(screen.getByText(/loading/i)).toBeInTheDocument();
+
+    // await waitFor(() => {
+    //   expect(
+    //     screen.getByRole('heading', { name: /john/i }),
+    //   ).toBeInTheDocument();
+    //   // expect(screen.getByText(/john@gmail.com/i)).toBeInTheDocument();
+    // });
+
+    expect(
+      await screen.findByRole('heading', { name: /john/i }),
+    ).toBeInTheDocument();
+
+    // You just need to await for the first one.
+    expect(screen.getByText(/john@gmail.com/i)).toBeInTheDocument();
   });
 });
