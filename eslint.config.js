@@ -47,7 +47,8 @@ export default [
   //   },
   // },
   {
-    files: ['**/*.{test.js,test.jsx}'],
+    // files: ['**/*.{test.js,test.jsx}'],
+    files: ['**/*.{test,spec}.{ts,tsx,js,jsx}'],
     plugins: {
       vitest,
     },
