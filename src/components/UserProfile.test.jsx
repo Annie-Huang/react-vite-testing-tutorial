@@ -3,6 +3,7 @@ import UserProfile from './UserProfile.jsx';
 
 describe('UserProfile', () => {
   beforeEach(() => {
+    // eslint-disable-next-line no-undef
     global.fetch = vi.fn();
   });
 
@@ -11,6 +12,7 @@ describe('UserProfile', () => {
   });
 
   it('fetches and displays the user data', async () => {
+    // eslint-disable-next-line no-undef
     global.fetch.mockResolvedValueOnce({
       json: async () => ({ id: 4, name: 'John', email: 'john@gmail.com' }),
     });

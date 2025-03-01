@@ -54,7 +54,8 @@ export default [
     languageOptions: {
       globals: {
         ...vitest.environments.env.globals,
-        fetch: 'writable'
+        // Doesn't seem to be able to get rid of the "ESLint: 'global' is not defined.(no-undef)" in the UserProfile.test.jsx
+        fetch: 'writable',
       },
     },
     rules: {
