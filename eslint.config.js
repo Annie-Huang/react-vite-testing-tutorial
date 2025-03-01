@@ -4,6 +4,10 @@ import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 
+// https://stackoverflow.com/questions/73392328/vs-code-showing-eslint-error-but-vitest-is-working-vi-is-not-defined
+// seems we should not use 'vite-plugin-eslint' anymore
+import vitest from '@vitest/eslint-plugin';
+
 export default [
   { ignores: ['dist'] },
   {
@@ -35,11 +39,27 @@ export default [
       ],
     },
   },
+  // {
+  //   files: ['**/*.{test.js,test.jsx}'],
+  //   languageOptions: {
+  //     ecmaVersion: 2020,
+  //     globals: globals.jest,
+  //   },
+  // },
   {
     files: ['**/*.{test.js,test.jsx}'],
-    languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.jest,
+    plugins: {
+      vitest,
     },
+    languageOptions: {
+      globals: {
+        ...vitest.environments.env.globals,
+        fetch: 'writable'
+      },
+    },
+    rules: {
+      ...vitest.configs.recommended.rules,
+    },
+    // ...vitest.configs.all,
   },
 ];
