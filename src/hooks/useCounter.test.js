@@ -23,4 +23,18 @@ describe('useCounter', () => {
     });
     expect(result.current.count).toBe(2);
   });
+
+  it('decrement', () => {
+    const { result } = renderHook(() => useCounter(0));
+    expect(result.current.count).toBe(0);
+    act(() => {
+      result.current.decrement();
+    });
+    expect(result.current.count).toBe(-1);
+    act(() => {
+      result.current.decrement();
+    });
+
+    expect(result.current.count).toBe(-2);
+  });
 });
